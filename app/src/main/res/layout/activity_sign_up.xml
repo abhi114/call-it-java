@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_primary"
-    android:padding="10dp"
-    tools:context=".LoginActivity">
+    android:background="@color/purple_500"
+    tools:context=".SignUpActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -43,6 +42,19 @@
                 android:textSize="34sp" />
 
             <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
                 android:id="@+id/emailBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -68,18 +80,19 @@
                 android:padding="10dp" />
 
             <Button
-                android:id="@+id/Already_Account"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Login" />
-
-            <Button
                 android:id="@+id/CreateButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text=" Create An Account" />
+
+            <Button
+                android:id="@+id/Already_Account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Already Have an Account" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
